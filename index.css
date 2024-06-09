@@ -1,0 +1,39 @@
+/* Initialize color variables */
+:root {
+    --primary-color: #0d87d8;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    height: 120px;
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+}

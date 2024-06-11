@@ -1,0 +1,296 @@
+/* Initialize color variables */
+:root {
+    --primary-color: #00264d;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --nav-background-color: #ffffff;
+    --nav-text-color: #333;
+    --nav-hover-color: #f1f1f1;
+    --button-background-color: rgba(0, 0, 0, 0.5);
+    --button-hover-background-color: rgba(0, 0, 0, 0.8);
+    --footer-background-color: #333;
+    --footer-text-color: #f8f9fa;
+    --footer-link-color: #ffffff;
+    --tag-design: #cce5ff;
+    --tag-development: #d4edda;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 50px 10px 50px ;
+    background-color: var(--primary-color);
+    height: 70px;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    max-width: 100%;
+}
+
+.navbar {
+    height: 70px;
+    background-color: var(--nav-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 1;
+    padding: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    padding:  10 px ;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    padding: 20px 50px 20px 50px ;
+    border-radius: 10px;
+    display: block;
+    border: #09264d;   
+}
+/* Styles for navigation menu icons */
+.nav-icon {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    margin-left: 10px; /* Space between text and icon */
+    vertical-align: middle; /* Align icon with text */
+}
+
+.nav-item a:hover,
+.nav-item:hover > a {
+    background-color:var(--primary-color);
+    color: var(--footer-text-color) ;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--nav-background-color);
+    list-style-type: none;
+    margin: 0;
+    border-radius: 10px;
+    /*  padding: 20; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+.dropdown-menu li a {
+    padding: 10px 10px;
+    display: block;
+    text-align: left;
+    color: var(--primary-color);
+    
+    /* text-decoration: none; */
+    
+}
+
+/* .dropdown-menu li a:hover {
+    background-color: var(--primary-color);
+} */
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    width: 220px;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 5px 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    color: var(--primary-color);
+}
+
+.services-table {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-color: #00264d;    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--secondary-color);
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: var(--nav-hover-color);
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    color: var(--text-color);
+    
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: var(--tag-design); /* Default color */
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.tag.design {
+    background-color: var(--tag-design);
+}
+
+.tag.development {
+    background-color: var(--tag-development);
+}
+
+.register-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+
+
+.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--footer-text-color);
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: var(--footer-link-color);
+    transition: color 0.3s ease;
+}
+
+.footer-section li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-item a {
+        padding: 10px;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-table {
+        margin: 20px;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+    }
+}

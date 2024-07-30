@@ -9,13 +9,11 @@
     --nav-hover-color: #f1f1f1;
     --button-background-color: rgba(0, 0, 0, 0.5);
     --button-hover-background-color: rgba(0, 0, 0, 0.8);
-    --dot-color: #bbb;
-    --dot-active-color: #717171;
-    --service-background-color: #f8f9fa;
-    --paint-stroke-color: #e0e0e0;
     --footer-background-color: #333;
     --footer-text-color: #f8f9fa;
     --footer-link-color: #ffffff;
+    --tag-design: #cce5ff;
+    --tag-development: #d4edda;
 }
 
 body {
@@ -68,7 +66,8 @@ body {
 .nav-item a {
     text-decoration: none;
     color: var(--nav-text-color);
-    padding: 50px;
+    padding: 20px 50px 20px 50px ;
+    border-radius: 10px;
     display: block;
     border: #09264d;   
 }
@@ -94,7 +93,8 @@ body {
     background-color: var(--nav-background-color);
     list-style-type: none;
     margin: 0;
-    padding: 20;
+    border-radius: 10px;
+    /*  padding: 20; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 20;
 }
@@ -128,35 +128,82 @@ body {
 .dropdown-link:hover {
     color: var(--primary-color);
 }
-.Page-info{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10% ;
-    padding-bottom: 10%;
+
+.services-table {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-color: #00264d;    
 }
 
-.about-us {
-    padding: 50px 20px;
-    background-color: var(--service-background-color);
-    font-style: italic;
-    text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.about-button {
+thead {
+    background-color: var(--secondary-color);
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: var(--nav-hover-color);
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    color: var(--text-color);
+    
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: var(--tag-design); /* Default color */
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.tag.design {
+    background-color: var(--tag-design);
+}
+
+.tag.development {
+    background-color: var(--tag-development);
+}
+
+.register-button {
     padding: 10px 20px;
     border: none;
     background-color: var(--primary-color);
     color: #fff;
-    font-size: 1em;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
-    border-radius: 12px;
 }
 
-.about-button:hover {
+.register-button:hover {
     background-color: var(--button-hover-background-color);
 }
+
+
+
 .footer {
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
@@ -234,31 +281,16 @@ body {
         padding: 10px;
     }
 
-    .carousel {
-        height: 300px;
-    }
-
-    .carousel-container a {
-        height: 100%;
-    }
-
-    .service-item {
+    .footer-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
-    .service-item.reverse {
-        flex-direction: column;
+    .services-table {
+        margin: 20px;
     }
 
-    .service-image-container {
-        margin: 0 0 20px 0;
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
-
-    .service-item.reverse .service-image-container {
-        margin: 0 0 20px 0;
+    thead th, tbody td {
+        padding: 10px;
     }
 }

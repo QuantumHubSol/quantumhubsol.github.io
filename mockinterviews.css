@@ -2,7 +2,7 @@
 :root {
     --primary-color: #00264d;
     --secondary-color: #f8f9fa;
-    --text-color: #333;
+    --text-color: #000000;
     --background-color: #ffffff;
     --nav-background-color: #ffffff;
     --nav-text-color: #333;
@@ -32,6 +32,9 @@ body {
     background-color: var(--primary-color);
     height: 70px;
     text-align: center;
+}
+h1,h2{
+    color: #09264d;
 }
 
 .logo {
@@ -125,17 +128,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
+.dropdown-link:hover {
+    color: var(--primary-color);
+}
 
 .services {
-    padding: 50px 20px;
+    padding: 20px 20px;
     background-color: var(--service-background-color);
 }
 
 .section-title {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: var(--primary-color) ;
 }
 
@@ -145,7 +150,7 @@ body {
     justify-content: space-between;
     margin: 20px 0;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1740px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary-color);
@@ -177,39 +182,29 @@ body {
 }
 
 
-.apply-button {
-    padding: 10px 20px;
-    border: none;
+.service-content.ul{
+    padding-bottom: 5px;
+}
+.submit-button {
+    width: 15%;
+    padding: 10px;
     background-color: var(--primary-color);
     color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 12px;
-}
-.apply-button a {
-    color: var(--background-color);
-}
-.apply-button:hover {
-    background-color: var(--button-hover-background-color);
-}
-.about-button {
-    padding: 10px 20px;
     border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 1em;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 12px;
-}
-.about-button a {
-    color: var(--background-color);
-}
-.about-button:hover {
-    background-color: var(--button-hover-background-color);
+    
 }
 
+.submit-button:hover {
+    background-color: var(--button-hover-background-color);
+}
+.Form-Button{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
 .footer {
     background-color: var(--footer-background-color);

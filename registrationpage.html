@@ -8,91 +8,30 @@
 </head>
 <body>
     <header class="header">
-        <img src="https://raw.githubusercontent.com/QuantumHubSol/QuantumHubSol/main/assets/qhslogo.png" alt="QHS Logo" class="logo">
+        <img src="Assets/qhslogo.png" alt="QHS Logo" class="logo">
     </header>
     <nav class="navbar">
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-                <a href="services.html">Services</a>
-                <ul class="dropdown-menu">
-                    <li><a href="services.html">Placement Assistance</a></li>
-                    <li><a href="coursetraining.html">Courses Training</a></li>
-                    <li><a href="#">Internship</a></li>
-                    <li><a href="#">Mock Interviews</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="courselist.html">Course list</a>
-                <ul class="dropdown-menu">
-                    <li><a href="java.html" class="dropdown-link">Java</a></li>
-                    <li><a href="#" class="dropdown-link">Python</a></li>
-                </ul>
-            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
-            <li class="nav-item"><a href="#">Get in touch<img src="https://raw.githubusercontent.com/QuantumHubSol/QuantumHubSol/main/assets/Images/Hcall.png" alt="Phone Icon" class="nav-icon"></a></li>
+        <ul class="nav-menu" id="dynamicNavMenu">
         </ul>
     </nav>
     <section class="registration-form">
         <h2>Registration Form</h2>
-        <form id="registrationForm">
+        <form id="registrationForm" action="https://formsubmit.co/quantumhubsolutions7@gmail.com" method="POST">
             <label for="fullName">Full Name:</label>
             <input type="text" placeholder="Mr./Ms." id="fullName" name="fullName" required>
-            
             <label for="email">E-mail ID:</label>
             <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
-            
-            <label for="contactNumber">Contact Number:</label>
-            <div class="phone-input">
-                <select id="countryCode" name="countryCode" required>
-                    <option value="+1">+1</option>
-                    <option value="+91">+91</option>
-                    <!-- Add more country codes as needed -->
-                </select>
-                <input type="text" id="contactNumber" name="contactNumber" required>
-            </div>
-            <span class="error-message" id="contactError">Contact number must be 10 digits long.</span>
-            <label for="education">Educational Qualification:</label>
-            <input type="text" id="education" name="education" required>
-            
-            <label for="experience">Experienced/Fresher:</label>
-            <select id="experience" name="experience" required>
-                <option value = "Select">Select</option>
-                <option value="Fresher">Fresher</option>
-                <option value="Experienced">Experienced</option>
-            </select>
-            
-            <label for="passedOut">Passed Out Year:</label>
-            <select id="passedOut" name="passedOut" required>
-                <option value = "Select">Select</option>
-                <!-- Options from 1995 to 2024 -->
-                <script>
-                    for (let year = 1995; year <= 2024; year++) {
-                        document.write(`<option value="${year}">${year}</option>`);
-                    }
-                </script>
-            </select>
-            
-            <label for="course">Course:</label>
-            <input type="text" id="course" name="course" readonly>
-            
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-            
-            <label for="mode">Mode:</label>
-            <select id="mode" name="mode" required>
-                <option value = "Select">Select</option>
-                <option value="Online">Online</option>
-                <option value="Offline">Offline</option>
-            </select>
             <div class="Form-Button">
-            <button type="submit" class="submit-button">Submit</button></div>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
         </form>
     </section>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>About Us</h3>
-                <p>We provide top-notch services in IT training, mock interviews, placement assistance, internships, and more.</p>
+                <p>We provide top-notch services in IT training, mock interviews, placement assistance, internships, and
+                    more.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -116,7 +55,7 @@
     </footer>
     <script>
         // Validation for contact number
-        document.getElementById('contactNumber').addEventListener('input', function() {
+        document.getElementById('contactNumber').addEventListener('input', function () {
             const contactNumber = this.value;
             const contactError = document.getElementById('contactError');
             if (contactNumber.length !== 10) {
@@ -125,25 +64,22 @@
                 contactError.style.display = 'none';
             }
         });
-        
-
         // Dynamic course name setting
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const courseName = urlParams.get('course');
             if (courseName) {
                 document.getElementById('course').value = courseName;
             }
         });
-
-        // Form submission handling
-        document.getElementById('registrationForm').addEventListener('submit', function(event) {
-            const contactNumber = document.getElementById('contactNumber').value;
-            if (contactNumber.length !== 10) {
-                event.preventDefault();
-                alert('Please check the contact number.');
-            }
+        
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+    // Your existing validation logic here
+    // If validation passes, the form will be submitted to FormSubmit
         });
+        var form=document.getElementById('registrationForm');
+        form.reset();
     </script>
+    <script src="menu.js"></script>
 </body>
 </html>

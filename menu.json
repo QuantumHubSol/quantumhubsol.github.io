@@ -1,0 +1,77 @@
+{
+    "menuItems": [
+      {
+        "name": "Home",
+        "link": "index.html"
+      },
+      {
+        "name": "Services",
+        "link": "#services",
+        "dropdown": [
+          {
+            "name": "Placement Assistance",
+            "link": "services.html"
+          },
+          {
+            "name": "Courses Training",
+            "link": "courselist.html"
+          },
+          {
+            "name": "Internship",
+            "link": "#"
+          },
+          {
+            "name": "Mock Interviews",
+            "link": "mockinterviews.html"
+          }
+        ]
+      },
+      {
+        "name": "Course list",
+        "link": "courselist.html",
+        "dropdown": [
+          {
+            "name": "Java Full Stack",
+            "link": "Java.html"
+          },
+          {
+            "name": "Python Full Stack",
+            "link": "pythonfullstack.html"
+          },
+          {
+            "name": ".Net Full Stack",
+            "link": "dotNetfullstack.html"
+          },
+          {
+            "name": "PowerBI with SQL",
+            "link": "Powerbisql.html"
+          },
+          {
+            "name": "Data Science",
+            "link": "datascience.html"
+          },
+          {
+            "name": "Software Testing",
+            "link": "softwaretesting.html"
+          },
+          {
+            "name": "DevOps with AWS/Azure",
+            "link": "devopsazure.html"
+          },
+          {
+            "name": "Power Apps",
+            "link": "powerapps.html"
+          }
+        ]
+      },
+      {
+        "name": "About Us",
+        "link": "aboutus.html"
+      },
+      {
+        "name": "Get in touch",
+        "link": "contactus.html",
+        "icon": "Assets/Images/Hcall.png"
+      }
+    ]
+  }

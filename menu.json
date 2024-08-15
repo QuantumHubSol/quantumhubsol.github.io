@@ -18,7 +18,7 @@
           },
           {
             "name": "Internship",
-            "link": "#"
+            "link": "internship.html"
           },
           {
             "name": "Mock Interviews",
@@ -32,7 +32,7 @@
         "dropdown": [
           {
             "name": "Java Full Stack",
-            "link": "Java.html"
+            "link": "java.html"
           },
           {
             "name": "Python Full Stack",
@@ -71,7 +71,7 @@
       {
         "name": "Get in touch",
         "link": "contactus.html",
-        "icon": "Assets/Images/Hcall.png"
+        "icon": "/assets/images/Hcall.png"
       }
     ]
   }

@@ -302,10 +302,21 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
+    display: inline-block; /* Ensure the button behaves as an inline-block */
 }
-.service-button a{
-text-decoration: none;
+
+/* Remove link styling from any <a> inside .service-button */
+.service-button a {
+    color: inherit; /* Inherit color from the parent .service-button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure link behaves like a block inside the button */
+    width: 100%; /* Ensure the link takes up the full width of the button */
+    height: 100%; /* Ensure the link takes up the full height of the button */
+    padding: 0; /* Remove any additional padding */
+    margin: 0; /* Remove any additional margin */
+    box-sizing: border-box; /* Make sure padding and border are included in the element's total width and height */
 }
+
 .service-button:hover {
     background-color: var(--button-hover-background-color);
 }

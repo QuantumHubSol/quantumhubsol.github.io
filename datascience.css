@@ -232,9 +232,7 @@ h2 {
     cursor: pointer;
     font-size:large;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-    
-    
+    transition: background-color 0.3s ease;   
 }
 .submit-button:hover {
     background-color: var(--button-hover-background-color);

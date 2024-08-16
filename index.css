@@ -298,11 +298,14 @@ body {
     border: none;
     background-color: var(--primary-color);
     color: #fff;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
 }
-
+.service-button a{
+text-decoration: none;
+}
 .service-button:hover {
     background-color: var(--button-hover-background-color);
 }
@@ -391,9 +394,11 @@ body {
     min-width: 200px;
     margin: 10px;
 }
-.footer-section h3 {
+.footer-section {
+    font-size: small;
     margin-bottom: 10px;
 }
+
 
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 0;

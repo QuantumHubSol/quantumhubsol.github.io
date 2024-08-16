@@ -55,3 +55,64 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('footer-data.json')
+        .then(response => response.json())
+        .then(data => {
+            const footer = document.getElementById('dynamicFooter');
+            footer.className = 'footer';
+
+            const footerContainer = document.createElement('div');
+            footerContainer.className = 'footer-container';
+
+            data.footerSections.forEach(section => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'footer-section';
+
+                const title = document.createElement('h3');
+                title.textContent = section.title;
+                sectionDiv.appendChild(title);
+
+                if (section.content) {
+                    const content = document.createElement('p');
+                    content.textContent = section.content;
+                    sectionDiv.appendChild(content);
+                }
+
+                if (section.links) {
+                    const ul = document.createElement('ul');
+                    section.links.forEach(link => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = link.url;
+                        a.textContent = link.name;
+                        li.appendChild(a);
+                        ul.appendChild(li);
+                    });
+                    sectionDiv.appendChild(ul);
+                }
+
+                if (section.contactInfo) {
+                    const ul = document.createElement('ul');
+                    section.contactInfo.forEach(info => {
+                        const li = document.createElement('li');
+                        li.textContent = `${info.type}: ${info.value}`;
+                        ul.appendChild(li);
+                    });
+                    sectionDiv.appendChild(ul);
+                }
+
+                footerContainer.appendChild(sectionDiv);
+            });
+
+            footer.appendChild(footerContainer);
+
+            const footerBottom = document.createElement('div');
+            footerBottom.className = 'footer-bottom';
+            const copyright = document.createElement('p');
+            copyright.textContent = data.copyrightText;
+            footerBottom.appendChild(copyright);
+            footer.appendChild(footerBottom);
+        })
+        .catch(error => console.error('Error loading the footer:', error));
+});

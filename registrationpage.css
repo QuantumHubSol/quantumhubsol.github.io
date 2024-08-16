@@ -202,12 +202,6 @@ body {
     flex-direction: column;
     align-items: end;
 }
-.footer {
-    background-color: var(--footer-background-color);
-    color: var(--footer-text-color);
-    padding: 20px 0;
-    text-align: center;
-}
 
 .footer {
     background-color: var(--footer-background-color);
@@ -215,7 +209,6 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -230,10 +223,11 @@ body {
     min-width: 200px;
     margin: 10px;
 }
-
-.footer-section h3 {
+.footer-section {
+    font-size: small;
     margin-bottom: 10px;
 }
+
 
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 0;
@@ -241,7 +235,6 @@ body {
     list-style: none;
     color: var(--footer-text-color);
 }
-
 .footer-section ul {
     padding-left: 0;
 }
@@ -263,7 +256,6 @@ body {
 .footer-bottom p {
     margin: 0;
 }
-
 @media (max-width: 768px) {
     .header {
         height: auto;

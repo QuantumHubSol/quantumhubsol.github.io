@@ -184,9 +184,10 @@ body {
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
+    /* margin: 10px; */
 }
-.footer-section h3 {
+.footer-section {
+    font-size: small;
     margin-bottom: 10px;
 }
 .setsusapart-content{
@@ -213,9 +214,9 @@ body {
     color: var(--primary-color);
 }
 
-.footer-bottom {
+/* .footer-bottom {
     margin-top: 20px;
-}
+} */
 
 .footer-bottom p {
     margin: 0;

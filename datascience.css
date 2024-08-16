@@ -317,10 +317,10 @@ h2 {
     margin: 0 15px;
 }
 
-.footer-section h3 {
-    color: var(--footer-link-color);
+.footer-section {
+    font-size: small;
+    margin-bottom: 10px;
 }
-
 .footer-section ul {
     list-style-type: none;
     padding-left: 0;

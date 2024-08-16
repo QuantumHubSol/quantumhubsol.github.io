@@ -1,0 +1,26 @@
+{
+    "footerSections": [
+      {
+        "title": "About Us",
+        "content": "We provide top-notch services in IT training, mock interviews, placement assistance, internships, and more."
+      },
+      {
+        "title": "Quick Links",
+        "links": [
+          { "name": "Home", "url": "index.html" },
+          { "name": "Services", "url": "services.html" },
+          { "name": "About Us", "url": "aboutus.html" },
+          { "name": "Contact", "url": "contactus.html" }
+        ]
+      },
+      {
+        "title": "Contact Us",
+        "contactInfo": [
+          { "type": "Email", "value": "hr@quantumhubsolut.com" },
+          { "type": "Phone", "value": "+987654321" },
+          { "type": "Address", "value": "Gokul plots, KPHB, Hyderabad, 500085" }
+        ]
+      }
+    ],
+    "copyrightText": "© 2024 Service Provider. All rights reserved."
+  }

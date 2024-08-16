@@ -289,8 +289,8 @@ body {
     min-width: 200px;
     margin: 10px;
 }
-
-.footer-section h3 {
+.footer-section {
+    font-size: small;
     margin-bottom: 10px;
 }
 

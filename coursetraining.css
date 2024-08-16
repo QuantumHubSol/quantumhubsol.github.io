@@ -225,11 +225,10 @@ tbody td {
     min-width: 200px;
     margin: 10px;
 }
-
-.footer-section h3 {
+.footer-section {
+    font-size: small;
     margin-bottom: 10px;
 }
-
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 0;
     padding: 0;

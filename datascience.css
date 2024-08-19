@@ -35,7 +35,7 @@ body {
 
 .logo {
     height: 50px;
-    max-width: 100%;
+    max-width: 90%;
 }
 .navbar {
     background-color: var(--nav-background-color);
@@ -341,24 +341,81 @@ h2 {
     padding-top: 10px;
     border-top: 1px solid #555;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff; /* Change the hamburger icon color to white */
+    border-radius: 10px;
+}
 
 @media (max-width: 768px) {
     .header {
+        height: auto;
         padding: 10px;
+        display: flex;
+        justify-content: space-between; /* Align the logo and hamburger to the sides */
+        align-items: center; /* Center align vertically */
+    }
+    .logo {
+        height: 40px; /* Reduce the logo size */
+        max-width: 70%; /* Reduce width if necessary to fit the logo properly */
+    }
+    .navbar {
+        display: none; /* Hide the original navbar on mobile */
     }
 
-    .nav-menu {
+    .hamburger {
+        display: flex;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Initially hidden off-screen */
+        background-color: var(--primary-color);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding-top: 60px; /* Space for the header */
+        overflow-x: hidden;
+    }
+    .sidebar.show {
+        left: 0; /* Slide in the sidebar */
+    }
+
+    .sidebar .nav-menu {
+        display: flex;
         flex-direction: column;
+        padding-left: 20px;
+    }
+    .service-content {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    .nav-item a{
+        padding: 15px;
+        font-size: 18px;
+        color: var(--footer-text-color);
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
     }
 
-    .nav-item {
-        margin: 5px 0;
-    }
-
-    .dropdown-menu {
-        position: static;
-        display: none;
-        background-color: #f9f9f9;
+    .nav-item a:hover {
+        background-color: var(--button-hover-background-color);
     }
 
     .nav-item:hover .dropdown-menu {

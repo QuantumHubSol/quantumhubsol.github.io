@@ -12,10 +12,20 @@
 <body>
     <header class="header">
         <img src="/assets/qhslogo.png" alt="QHS Logo" class="logo">
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <nav class="navbar">
         <ul class="nav-menu" id="dynamicNavMenu">
             
+        </ul>
+    </nav>
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-menu" >
+            <!-- Dynamically loaded menu items will go here -->
         </ul>
     </nav>
     <main class="main-content">
@@ -151,5 +161,23 @@
         <!-- The footer content will be dynamically inserted here -->
     </footer>
     <script src="menu.js"></script>
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('dynamicNavMenu');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
+
+    // The rest of your existing code for dynamic menu rendering
+    fetch('menu.json')
+        .then(response => response.json())
+        .then(data => {
+            // your existing code to render the menu
+        })
+        .catch(error => console.error('Error loading the menu:', error));
+});
+    </script>
 </body>
 </html>

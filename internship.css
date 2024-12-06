@@ -19,57 +19,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-main {
-    padding: 20px;
-}
-
-h1, h2 {
-    color: var(--primary-color);
-    
-}
-.title{
-    text-align: center;
-    color:var(--primary-color);
-    padding: 20px;
-}
-.commitment, .benefits, .join-us {
-    margin-bottom: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.apply-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.apply-button:hover {
-    background-color: #3d3f3d;
-}
-
-body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
@@ -87,6 +36,7 @@ body {
 
 .logo {
     height: 50px;
+    max-width: 100%;
     max-width: 90%;
 }
 
@@ -98,7 +48,6 @@ body {
     align-items: center;
     z-index: 10;
     position: relative;
-    
 }
 
 .nav-menu {
@@ -110,21 +59,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .nav-item {
     position: relative;
-    padding: 10px ;
-    border-radius: 10px;
+    padding:  10 px ;
 }
 
 .nav-item a {
     text-decoration: none;
     color: var(--nav-text-color);
     padding: 20px 50px 20px 50px;
-    display: block;
     border-radius: 10px;
+    display: block;
     border: #09264d;   
 }
 /* Styles for navigation menu icons */
@@ -149,10 +96,9 @@ body {
     background-color: var(--nav-background-color);
     list-style-type: none;
     margin: 0;
-    padding: 20;
+    padding: 20; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 20;
-    
 }
 .dropdown-menu li a {
     padding: 10px 10px;
@@ -164,9 +110,9 @@ body {
     
 }
 
-/* .dropdown-menu li a:hover {
+.dropdown-menu li a:hover {
     background-color: var(--primary-color);
-} */
+}
 
 .nav-item:hover .dropdown-menu {
     display: block;
@@ -180,94 +126,56 @@ body {
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
-.dropdown-link:hover {
-    color: var(--primary-color);
-}
-/* .Page-info{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10% ;
-    padding-bottom: 10%;
-} */
-
-
-.services {
-    padding: 20px 20px;
-    max-width: 1000px;
-    background-color: var(--service-background-color);
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 0px;
-    color: var(--primary-color) ;
-}
-
-.service-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding: 40px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--secondary-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-item:hover {
-    .service-image{ 
-     rotate: -5deg;
-    } 
-}
-
-.service-item.reverse {
-    flex-direction: row-reverse;
-}
-
-.service-image-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-}
-
-.service-item.reverse .service-image-container {
-    margin-left: 0;
-    margin-right: 20px;
-}
-
-
-.service-content.ul{
-    padding-bottom: 5px;
-}
-
-.about-us {
+/* 
+.aboutus {
     padding: 50px 20px;
     background-color: var(--service-background-color);
-    font-style: italic;
-    text-align: center;
-}
+} */
 
-.about-button {
+/* .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color) ;
+} */
+
+.aboutus-item, .aboutus-, .aboutus {
+    background-color: var(--secondary-color);
+    color: #09264d;
+    border-radius: 5px;
+    padding: 0px  20px 0px 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 5 ;
+}
+.main-content {
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+.apply-button {
     padding: 10px 20px;
     border: none;
     background-color: var(--primary-color);
     color: #fff;
-    font-size: 1em;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
-    border-radius: 12px;
 }
 
-.about-button:hover {
-    background-color: var(--button-hover-background-color);
+.aboutus-content h3 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+.aboutus-content p {
+    margin: 0 0 20px 0;
+    color: var(--text-color);
+}
+.setsusapart-conclusion h4{
+    font-weight:500;
+    font-size: larger;
+    color: rgb(57, 127, 136);
 }
 .footer {
     background-color: var(--footer-background-color);
@@ -275,7 +183,6 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -288,20 +195,22 @@ body {
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .footer-section {
     font-size: small;
     margin-bottom: 10px;
 }
+.setsusapart-content{
+    margin: 0 auto;
 
+}
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 0;
     padding: 0;
     list-style: none;
     color: var(--footer-text-color);
 }
-
 .footer-section ul {
     padding-left: 0;
 }
@@ -316,13 +225,14 @@ body {
     color: var(--primary-color);
 }
 
-.footer-bottom {
+/* .footer-bottom {
     margin-top: 20px;
-}
+} */
 
 .footer-bottom p {
     margin: 0;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -338,8 +248,10 @@ body {
     background-color: #ffffff; /* Change the hamburger icon color to white */
     border-radius: 10px;
 }
+
 @media (max-width: 768px) {
     .header {
+        height: auto;
         padding: 10px;
         display: flex;
         justify-content: space-between; /* Align the logo and hamburger to the sides */
@@ -347,10 +259,10 @@ body {
     }
 
     .logo {
-        height: 50px;
         height: 40px; /* Reduce the logo size */
         max-width: 70%; /* Reduce width if necessary to fit the logo properly */
     }
+
     .navbar {
         display: none; /* Hide the original navbar on mobile */
     }
@@ -374,14 +286,15 @@ body {
         padding-top: 60px; /* Space for the header */
         overflow-x: hidden;
     }
-    .sidebar.show {
-        left: 0; /* Slide in the sidebar */
-    }
 
-    .sidebar .nav-menu {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
+        .sidebar.show {
+            left: 0; /* Slide in the sidebar */
+        }
+
+        .sidebar .nav-menu {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
     }
 
     .nav-item a {
@@ -392,13 +305,11 @@ body {
         display: block;
         transition: background-color 0.3s ease;
     }
+
     .nav-item a:hover {
         background-color: var(--button-hover-background-color);
     }
-    .service-content {
-        flex: 1;
-        margin-bottom: 20px;
-    }
+
     .carousel {
         height: 300px;
     }
@@ -407,6 +318,10 @@ body {
         height: 100%;
     }
 
+    .service-content {
+        flex: 1;
+        margin-bottom: 20px;
+    }
     .service-item {
         flex-direction: column;
         text-align: center;

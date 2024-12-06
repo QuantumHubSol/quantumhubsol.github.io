@@ -159,8 +159,10 @@ body {
     margin: 0 5 ;
 }
 .main-content {
-    max-width: max-content;
-    margin: 0 auto;
+    max-width: 1500;
+    align-items: center;
+    text-align: left;
+    margin: 0px 540px;
     padding: 20px;
 }
 

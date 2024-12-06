@@ -194,7 +194,10 @@ body {
 
 
 .services {
-    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    max-width: 800px;
     background-color: var(--service-background-color);
 }
 

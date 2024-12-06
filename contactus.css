@@ -125,7 +125,8 @@ body {
     transition: background-color 0.3s ease;
 }
 .contact-container {
-    max-width: 800px;
+    max-width: 500px;
+    text-align: center;
     margin: 50px auto;
     padding: 20px;
 }
@@ -150,6 +151,7 @@ body {
     line-height: 1.8;
     color: var(--text-color);
     font-size: 1.1em;
+    text-align: center;
 }
 
 .footer {

@@ -125,7 +125,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .contact-container {
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;
     margin: 50px auto;
     padding: 20px;

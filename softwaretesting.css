@@ -70,17 +70,30 @@ body {
     background-color:var(--primary-color);
     color: var(--footer-text-color) ;
 }
-/* .navitem {
-    position: relative;
-    padding:  10 px ;
+.Registerbtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    display: inline-block; /* Ensure the button behaves as an inline-block */
+    transition: background-color 0.3s;
 }
-.navmenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.Course-Title{
     display: flex;
-    justify-content: right;
-} */
+    flex-direction: column;
+    align-items:start;
+    gap: 5px;
+
+}
+.Registerbtn:hover,
+.Registerbtn:active {
+ outline: none;
+ background-color: #073d74;
+}
 .dropdown-menu {
     display: none;
     position: absolute;

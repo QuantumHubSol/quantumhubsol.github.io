@@ -81,7 +81,10 @@ body {
     margin-left: 10px; /* Space between text and icon */
     vertical-align: middle; /* Align icon with text */
 }
-
+.image-placeholder{
+    max-width: 900px;
+    align-items: center;
+}
 .nav-item a:hover,
 .nav-item:hover > a {
     background-color:var(--primary-color);

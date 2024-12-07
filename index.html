@@ -26,7 +26,8 @@
             <!-- Dynamically loaded menu items will go here -->
         </ul>
     </nav>
-    <section class="carousel">
+    <img class="image-placeholder" src="/assets/images/placeholder.png">
+    <!-- <section class="carousel">
         <div class="carousel-container">
             <a href="page1.html"><img src="/assets/images/Image1.png" alt="Image 1"></a>
             <a href="page2.html"><img src="/assets/images/Image2.png" alt="Image 2"></a>
@@ -41,7 +42,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </section>
+    </section> -->
     <section class="services">
         <h2 class="section-title">Our Services</h2>
         <div class="service-item">
@@ -112,37 +113,37 @@
     </footer>
     <script>
         let slideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-container a');
-        const dots = document.querySelectorAll('.dot');
-        const prev = document.querySelector('.prev');
-        const next = document.querySelector('.next');
+        // const slides = document.querySelectorAll('.carousel-container a');
+        // const dots = document.querySelectorAll('.dot');
+        // const prev = document.querySelector('.prev');
+        // const next = document.querySelector('.next');
 
-        const showSlides = () => {
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
-            }
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].classList.remove('active');
-            }
-            dots[slideIndex].classList.add('active');
-        };
+        // const showSlides = () => {
+        //     for (let i = 0; i < slides.length; i++) {
+        //         slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
+        //     }
+        //     for (let i = 0; i < dots.length; i++) {
+        //         dots[i].classList.remove('active');
+        //     }
+        //     dots[slideIndex].classList.add('active');
+        // };
 
-        const currentSlide = (n) => {
-            slideIndex = n;
-            showSlides();
-        };
+        // const currentSlide = (n) => {
+        //     slideIndex = n;
+        //     showSlides();
+        // };
 
-        prev.addEventListener('click', () => {
-            slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
-            showSlides();
-        });
+        // prev.addEventListener('click', () => {
+        //     slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+        //     showSlides();
+        // });
 
-        next.addEventListener('click', () => {
-            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
-            showSlides();
-        });
+        // next.addEventListener('click', () => {
+        //     slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+        //     showSlides();
+        // });
 
-        showSlides();
+        // showSlides();
 
         // Testimonials carousel
         let testimonialIndex = 0;

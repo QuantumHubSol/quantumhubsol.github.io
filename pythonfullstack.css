@@ -1,3 +1,4 @@
+/* Initialize color variables */
 :root {
     --primary-color: #00264d;
     --secondary-color: #f8f9fa;
@@ -35,25 +36,41 @@ body {
 
 .logo {
     height: 50px;
+    max-width: 100%;
     max-width: 90%;
 }
+
 .navbar {
+    height: 70px;
     background-color: var(--nav-background-color);
-    padding: 10px 0;
-}
-.nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
 }
+
+.nav-menu {
+    list-style-type: none;
+    margin: 1;
+    padding: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    padding:  10 px ;
+}
+
 .nav-item a {
     text-decoration: none;
     color: var(--nav-text-color);
     padding: 20px 50px 20px 50px;
     border-radius: 10px;
-    font-weight: bold;
     display: block;
     border: #09264d;   
 }
@@ -70,36 +87,12 @@ body {
     background-color:var(--primary-color);
     color: var(--footer-text-color) ;
 }
-.Registerbtn {
-    padding: 10px 20px;
-    border: none;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-    display: inline-block; /* Ensure the button behaves as an inline-block */
-    transition: background-color 0.3s;
-}
-.Course-Title{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 5px;
 
-}
-.Registerbtn:hover,
-.Registerbtn:active {
- outline: none;
- background-color: #073d74;
-}
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    font-weight: bold;
     background-color: var(--nav-background-color);
     list-style-type: none;
     margin: 0;
@@ -117,9 +110,6 @@ body {
     
 }
 
-.dropdown-link:hover {
-    color: var(--primary-color);
-}                                                                                                                       
 .dropdown-menu li a:hover {
     background-color: var(--primary-color);
 }
@@ -136,183 +126,48 @@ body {
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-.dropdown-menu li a {
-    padding: 10px 10px;
-    display: block;
-    text-align: left;
-    color: var(--primary-color);
-    
-    /* text-decoration: none; */
-    
-}
-/* .layout{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-
+/* 
+.aboutus {
+    padding: 50px 20px;
+    background-color: var(--service-background-color);
 } */
-.layout-content{
-    margin: 1.5rem;
-    padding-left: 10%;
-    
-}
-.content-left{
-    display: inline-block;
-    /* padding:1rem 1rem; */
-    vertical-align: top;
-    padding-left: 10%;
- }
 
-.main-content {
-    max-width: max-content;
-    margin: 0 auto;
-    padding: 20px;
-}
-.course-details, .course-includes, .course-content, .course-audience, .course-header {
+/* .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color) ;
+} */
+
+.aboutus-item, .aboutus-, .aboutus {
+    background-color: var(--secondary-color);
+    color: #09264d;
     border-radius: 5px;
-    padding: 20px;
+    padding: 0px  20px 0px 20px;
     line-height: 1.5;
     margin-bottom: 40px;
     max-width: 800px;
     margin: 0 5 ;
 }
-.course-includes, .course-features{
-    list-style-type: none;
-    
-}
-.course-includes {
-    margin-bottom: 10px;
-}
-.course-features li {
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-.course-features li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #22c55e;
-    font-weight: bold;
-}
-.content {
-    display: flex;
-    flex-wrap: wrap;
+.main-content {
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.column {
-    display: flex;
-    flex: 1;
-    min-width: 300px;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.column li {
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-
-.column li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #22c55e;
-    font-weight: bold;
-}
-h1{
+.aboutus-content h3 {
+    margin: 0 0 10px 0;
     color: var(--primary-color);
 }
-h2 {
-    color: var(--primary-color);
-    margin-top: 0;
+.aboutus-content p {
+    margin: 0 0 20px 0;
+    color: var(--text-color);
 }
-.submit-button {
-    width: 20%;
-    height: 7%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size:large;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    
-    
+.setsusapart-conclusion h4{
+    font-weight:500;
+    font-size: larger;
+    color: rgb(57, 127, 136);
 }
-.submit-button:hover {
-    background-color: var(--button-hover-background-color);
-}
-.Form-Button{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.show-more, .expand-all {
-    background-color: transparent;
-    border: none;
-    color: blue;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 0;
-}
-.Course-button{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-.Register-button:hover {
-    background-color: var(--button-hover-background-color);
-}
-.Register-button {
-    width: 20%;
-    height: 7%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size:large;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    
-}
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.section-title {
-    font-weight: lighter;
-}
-
-.section-duration {
-    color: #666;
-    font-size: 14px;
-}
-
-.course-audience ul {
-    padding-left: 20px;
-}
-
-.course-audience li {
-    margin-bottom: 5px;
-    line-height: 1.5;
-}
-
 .footer {
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
@@ -331,14 +186,16 @@ h2 {
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .footer-section {
     font-size: small;
     margin-bottom: 10px;
 }
+.setsusapart-content{
+    margin: 0 auto;
 
-
+}
 .footer-section p, .footer-section ul, .footer-section li {
     margin: 0;
     padding: 0;
@@ -359,13 +216,14 @@ h2 {
     color: var(--primary-color);
 }
 
-.footer-bottom {
+/* .footer-bottom {
     margin-top: 20px;
-}
+} */
 
 .footer-bottom p {
     margin: 0;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -395,6 +253,7 @@ h2 {
         height: 40px; /* Reduce the logo size */
         max-width: 70%; /* Reduce width if necessary to fit the logo properly */
     }
+
     .navbar {
         display: none; /* Hide the original navbar on mobile */
     }
@@ -418,6 +277,17 @@ h2 {
         padding-top: 60px; /* Space for the header */
         overflow-x: hidden;
     }
+
+        .sidebar.show {
+            left: 0; /* Slide in the sidebar */
+        }
+
+        .sidebar .nav-menu {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+    }
+
     .nav-item a {
         padding: 15px;
         font-size: 18px;
@@ -426,21 +296,40 @@ h2 {
         display: block;
         transition: background-color 0.3s ease;
     }
+
     .nav-item a:hover {
         background-color: var(--button-hover-background-color);
     }
-    .nav-item:hover .dropdown-menu {
-        display: block;
+
+    .carousel {
+        height: 300px;
     }
+
+    .carousel-container a {
+        height: 100%;
+    }
+
     .service-content {
         flex: 1;
         margin-bottom: 20px;
     }
-    .footer-container {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-item.reverse {
         flex-direction: column;
     }
 
-    .footer-section {
-        margin-bottom: 20px;
+    .service-image-container {
+        margin: 0 0 20px 0;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .service-item.reverse .service-image-container {
+        margin: 0 0 20px 0;
     }
 }

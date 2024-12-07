@@ -169,7 +169,6 @@ body {
     padding: 20px;
 }
 .course-details, .course-includes, .course-content, .course-audience, .course-header {
-    background-color: var(--secondary-color);
     border-radius: 5px;
     padding: 20px;
     line-height: 1.5;
